@@ -1,9 +1,9 @@
 # Diarization using Faster Whisper
 
 ### Input
----
-![Audio sample](test/audio.wav)
----
+
+https://github.com/user-attachments/assets/cddb4a38-6a41-4743-94a6-6c7a3fcfb329
+
 
 ### Outputs
 ```json
