@@ -28,19 +28,19 @@ python diarize.py input_folder --num_speakers=2 --whisper_model=medium.en --vad_
 ## Model Size and Chunking
 The tool adjusts processing settings based on model size:
 
-#### Large models (large-v1, large-v2, large-v3):
+### Large models (large-v1, large-v2, large-v3):
 
 Use very small chunks (45 seconds)
 Higher precision (float32)
 More memory-intensive but more accurate
 
-#### Medium models (medium, medium.en):
+### Medium models (medium, medium.en):
 
 Use medium chunks (75 seconds)
 Higher precision (float32)
 Good balance of accuracy and resource usage
 
-#### Small models (small, small.en, base):
+### Small models (small, small.en, base):
 
 Use larger chunks (100 seconds)
 Lower precision (float16)
