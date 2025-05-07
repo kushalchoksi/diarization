@@ -1,5 +1,44 @@
 # Diarization using Faster Whisper
 
+### Input
+---
+![Audio sample](test/audio.wav)
+---
+
+### Outputs
+```json
+...
+  {
+    "start": 10.24,
+    "end": 11.4,
+    "text": "Do you think we can get back to that?",
+    "id": 2,
+    "speaker": "SPEAKER_2"
+  },
+  {
+    "start": 12.4,
+    "end": 14.8,
+    "text": "Not for now. We can, we have to try.",
+    "id": 3,
+    "speaker": "SPEAKER_1"
+  },
+  {
+    "start": 14.96,
+    "end": 21.66,
+    "text": "I mean, I will certainly try because I'm a big believer, that football is changing and you need to adapt to every situation",
+    "id": 4,
+    "speaker": "SPEAKER_1"
+  },
+...
+```
+
+| Start | End | Speaker | Transcription |
+|-------|-----|---------|------|
+0:00:00|0:00:10|SPEAKER_1|"You could feel, you could smell, you could sense the next step, you could smell the play. You could smell if the other team was, you know, slowing down."
+0:00:10|0:00:11|SPEAKER_2|Do you think we can get back to that?
+0:00:12|0:00:28|SPEAKER_1|"Not for now. We can, we have to try. I mean, I will certainly try because I'm a big believer, that football is changing and you need to adapt to every situation and you need to adapt to what's happening now. I mean, you cannot get away from this and you cannot underestimate the..."
+
+
 ## What it does
 
 1) Converts video / audio files to WAV format
@@ -10,7 +49,7 @@
 ## Requirements
 - Python 3.7+
 - PyTorch with CUDA Support (I personally used cuda 12.6 on Windows)
-- NVIDIA GPU (Ran Whisper distill-large-v3 with ease)
+- NVIDIA GPU (Ran Whisper distill-large-v3 with ease on GeForce GTX 1660)
 - ffmpeg (The 🐐)
 
 ## Setup
